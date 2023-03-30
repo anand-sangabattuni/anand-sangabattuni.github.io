@@ -94,8 +94,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <a href="#contact">Contact</a>
 <div class="search-container">
 <form action="/action_page.php">
-<input type="text" placeholder="Search.." name="search">
-<button type="submit"><i class="fa fa-search"></i></button>
+<input type="text" placeholder="Search here" name="search">
+<button id="searchButton" type="submit"><i class="fa fa-search"></i>here</button>
+  <script type="text/javascript">
+    document.getElementById("searchButton").onclick = function () {
+        location.href = "www.youtube.com";
+    };
+</script>
 </form>
 </div>
 </div>
